@@ -3,129 +3,453 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smartphone XYZ</title>
+    <title>BioChirp</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
         }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-            display: flex;
-            gap: 20px;
+
+        /* Header Styles */
+        .header {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('c:/Users/abhia/Downloads/Gradient Minimalist Scientific Research Instagram Post (1).svg') no-repeat center center/cover;
         }
-        .product-image {
-            flex: 1;
+        .header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
             text-align: center;
         }
-        .product-image img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        .product-details {
-            flex: 2;
-        }
-        .product-details h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-        .product-details .brand {
-            color: #555;
-            font-size: 14px;
-            margin: 5px 0;
-        }
-        .product-details .price {
-            font-size: 24px;
-            color: #d32f2f;
-            margin: 10px 0;
-        }
-        .product-details .description {
-            margin: 15px 0;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-        .product-details .features {
-            margin: 15px 0;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-        .product-details .quantity {
-            margin: 20px 0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .product-details .quantity input {
-            width: 50px;
+        .header p {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
             text-align: center;
+            width: 80%;
         }
-        .start-button {
-            display: inline-block;
+
+        /* Navigation Styles */
+        .nav-container {
+            background-color: #007BFF;
             padding: 10px 20px;
-            background-color: #1976d2;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .nav li {
+            margin: 0 15px;
+        }
+        .nav a {
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            text-align: center;
             font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
         }
-        .start-button:hover {
-            background-color: #1565c0;
+        .nav a:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
         }
-        .links {
-            margin-top: 20px;
+
+        /* Main Card Section */
+        .main {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            flex-wrap: wrap;
+            gap: 30px;
         }
-        .links a {
-            display: block;
-            color: #1976d2;
-            text-decoration: none;
-            margin-bottom: 5px;
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-        .links a:hover {
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Team Section */
+        .team {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 20px;
+        }
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: white;
             text-decoration: underline;
+            margin: 0 10px;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            border-radius: 8px;
+            width: 40%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover {
+            color: black;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="product-image">
-            <img src="https://via.placeholder.com/500" alt="Smartphone XYZ">
-        </div>
-        <div class="product-details">
-            <h1>Smartphone XYZ</h1>
-            <p class="brand">by BrandName</p>
-            <p class="sku">SKU: XYZ123</p>
-            <p class="price">₹15,999</p>
-            <p class="offer">Get extra 10% off with HDFC Bank Cards</p>
-            <p class="description">
-                Smartphone XYZ comes with a 6.5-inch display, 128GB storage, and a 48MP camera.
-                It is powered by a 5000mAh battery and supports fast charging.
-            </p>
-            <ul class="features">
-                <li>6.5-inch Full HD+ Display</li>
-                <li>48MP + 8MP + 2MP Triple Rear Camera</li>
-                <li>5000mAh Battery with Fast Charging</li>
-                <li>128GB Internal Storage</li>
-                <li>4GB RAM</li>
+    <!-- Header -->
+    <div class="header">
+        <h1>Welcome to BioChirp</h1>
+        <p>This platform enables you to query various interactions involving drugs, diseases, targets, genes, approval statuses, biomarkers, pathways, and more.</p>
+    </div>
+
+    <!-- Free Access License Section -->
+    <div style="text-align: center; margin: 20px 0;">
+        <p><a href="#" onclick="openLicenseModal()" style="text-decoration: underline; color: blue;">Learn more about our Free Access License</a>.</p>
+    </div>
+
+<!-- Free Access License Section
+<div style="text-align: center; margin: 20px 0;">
+    <p><a href="#" onclick="openLicenseModal()" style="text-decoration: underline; color: blue;">Learn more about our Free Access License</a>.</p>
+</div> -->
+
+<!-- Modal for Free Access License -->
+<div id="licenseModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeLicenseModal()">&times;</span>
+        <h3>Free Access License</h3>
+        <p>This website is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.</p>
+        <p>You are free to share, copy, and redistribute the material in any medium or format, as long as it is for non-commercial purposes and proper credit is given to BioChirp.</p>
+        <p><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="text-decoration: underline; color: blue;">Learn more about the license.</a></p>
+    </div>
+</div>
+
+<!-- CSS for Modal -->
+<style>
+    /* Modal container */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+    }
+
+    /* Modal content */
+    .modal-content {
+        background-color: white;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        border-radius: 8px;
+        width: 40%;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Close button */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .close:hover {
+        color: black;
+    }
+</style>
+
+<!-- JavaScript for Modal -->
+<script>
+    function openLicenseModal() {
+        document.getElementById("licenseModal").style.display = "block";
+    }
+
+    function closeLicenseModal() {
+        document.getElementById("licenseModal").style.display = "none";
+    }
+
+    // Close modal when clicking outside the content
+    window.onclick = function(event) {
+        const modal = document.getElementById("licenseModal");
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+
+    // Close modal using the Escape key
+    window.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+            closeLicenseModal();
+        }
+    });
+</script>
+    
+
+    <!-- Navigation -->
+    <div class="nav-container">
+        <div class="nav">
+            <ul>
+                <li><a href="#" onclick="openVideoModal()">Tutorial</a></li>
+                <li><a href="#" onclick="openModal()">Contact Us</a></li>
             </ul>
-            <div class="quantity">
-                <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" value="1" min="1">
-            </div>
-            <a href="#" class="start-button">Start</a>
-            <div class="links">
-                <a href="#">GitHub Repository</a>
-                <a href="#">Tutorial with Screenshots</a>
-            </div>
-            <p class="tutorial">Placeholder text for tutorial description. This section can include detailed steps and explanations.</p>
         </div>
     </div>
+
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeVideoModal()">&times;</span>
+                Watch Tutorial
+            </div>
+            <!-- Embedded YouTube Video -->
+            <iframe 
+                src="https://www.youtube.com/embed/RV4LGLyLT1s"  
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Open the video modal
+        function openVideoModal() {
+            document.getElementById("videoModal").style.display = "block";
+        }
+
+        // Close the video modal
+        function closeVideoModal() {
+            document.getElementById("videoModal").style.display = "none";
+        }
+
+        // Close the modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById("videoModal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+
+        // Close the modal using the Escape key
+        window.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                closeVideoModal();
+            }
+        });
+    </script>
+
+    <!-- Main Content -->
+    <div class="main">
+        <!-- Card 1 -->
+        <div class="card">
+            <a href="https://idrblab.net/ttd/" style="text-decoration: none;">
+                <img src="c:\Users\abhia\Downloads\TTD.webp" alt="TTD Image">
+            </a>
+            <h2>Therapeutic Targets Database</h2>
+            <p><a href="https://idrblab.net/ttd/" style="text-decoration: underline; color: blue;">TTD Database</a></p>
+            <p><a href="http://103.25.231.90:8003" style="text-decoration: underline; color: blue;">Talk with TTD</a></p>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <a href="https://ctdbase.org/" style="text-decoration: none;">
+                <img src="c:\Users\abhia\Downloads\CTD.webp" alt="CTD Image">
+            </a>
+            <h2>Comparative Toxicogenomics Database</h2>
+            <p><a href="https://ctdbase.org/" style="text-decoration: underline; color: blue;">CTD Database</a></p>
+            <p><a href="#" style="text-decoration: underline; color: blue;" onclick="underConstruction()">Talk with CTD</a></p>
+        </div>
+    </div>
+
+        <!-- Modal -->
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3>Contact Person</h3>
+                <p>Name: Debarka Sengupta</p>
+                <p>Email: debarka@iiitd.ac.in</p>
+            </div>
+        </div>
+    
+        <!-- Footer -->
+        <!-- <footer>
+            <p>© 2024 BioChirp. All rights reserved.</p>
+            <p>
+                <a href="https://twitter.com">Twitter</a> |
+                <a href="https://linkedin.com">LinkedIn</a>
+            </p>
+        </footer> -->
+    
+        <!-- JavaScript -->
+        <script>
+            function openModal() {
+                document.getElementById("contactModal").style.display = "block";
+            }
+    
+            function closeModal() {
+                document.getElementById("contactModal").style.display = "none";
+            }
+    
+            function underConstruction() {
+                alert("The page is under construction");
+            }
+    
+            window.onclick = function(event) {
+                const modal = document.getElementById("contactModal");
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            };
+    
+            window.addEventListener("keydown", function(event) {
+                if (event.key === "Escape") {
+                    closeModal();
+                }
+            });
+        </script>
+
+
+
+
+
+    <h2 style="text-align: center; font-size: 24px; margin-top: 40px;">Meet the Team</h2>
+
+    <!-- Team Section -->
+    <div class="team">
+        <div class="team-member">
+            <img src="d:\Abhi Photo.jpg" alt="Abhishek Halder">
+            <h3>Abhishek Halder</h3>
+            <p>PhD scholar in Computer Science.</p>
+        </div>
+        <div class="team-member">
+            <img src="c:\Users\abhia\Downloads\bunny1.jpg" alt="Bernadette Mathew">
+            <h3>Bernadette Mathew</h3>
+            <p>PhD scholar in Computational Biology</p>
+        </div>
+        <div class="team-member">
+            <img src="c:\Users\abhia\Downloads\DS.jpg" alt="Debarka Sengupta">
+            <h3>Debarka Sengupta</h3>
+            <p>Proffesor in Computer Science & Computational Biology</p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Contact Person</h3>
+            <p>Name: Debarka Sengupta</p>
+            <p>Email: debarka@iiitd.ac.in</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 BioChirp. All rights reserved.</p>
+        <!-- <p>
+            <a href="https://twitter.com">Twitter</a> |
+            <a href="https://linkedin.com">LinkedIn</a>
+        </p> -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function openModal() {
+            document.getElementById("contactModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("contactModal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("contactModal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+
+        window.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
 </body>
 </html>

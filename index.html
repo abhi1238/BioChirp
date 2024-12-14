@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BioChirp</title>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         /* Global Styles */
@@ -16,48 +15,42 @@
             padding: 0;
         }
 
-        /* Header Styles */
+        /* Header */
         .header {
             position: relative;
             width: 100%;
             height: 300px;
-            overflow: hidden;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                        url('assets\images\Gradient Minimalist Scientific Research Instagram Post (1).svg') no-repeat center center/cover;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+                        url('assets/images/Gradient Minimalist Scientific Research Instagram Post (1).svg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .header h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -60%);
-            color: white;
-            font-size: 48px;
-            font-weight: bold;
-            text-align: center;
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
         .header p {
-            position: absolute;
-            top: 70%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 18px;
-            text-align: center;
-            width: 80%;
+            font-size: 1.2em;
+            width: 90%;
         }
 
-        /* Navigation Styles */
+        /* Navigation */
         .nav-container {
             background-color: #007BFF;
             padding: 10px 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+            list-style: none;
             display: flex;
             justify-content: center;
+            margin: 0;
+            padding: 0;
         }
         .nav li {
             margin: 0 15px;
@@ -65,7 +58,7 @@
         .nav a {
             color: white;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 1em;
             padding: 10px 20px;
             border-radius: 5px;
             transition: background-color 0.3s, transform 0.3s;
@@ -75,13 +68,13 @@
             transform: scale(1.1);
         }
 
-        /* Main Card Section */
+        /* Main Section */
         .main {
             display: flex;
             justify-content: center;
-            padding: 20px;
             flex-wrap: wrap;
-            gap: 30px;
+            gap: 20px;
+            padding: 20px;
         }
         .card {
             background: white;
@@ -108,28 +101,29 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 30px;
+            gap: 20px;
             padding: 20px;
+        }
+        .team-member {
+            text-align: center;
         }
         .team-member img {
             width: 120px;
             height: 120px;
-            object-fit: cover;
             border-radius: 50%;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .team-member h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
         }
 
         /* Footer */
         footer {
             background: #007BFF;
             color: white;
-            padding: 20px;
+            padding: 15px 20px;
             text-align: center;
-        }
-        footer a {
-            color: white;
-            text-decoration: underline;
-            margin: 0 10px;
         }
 
         /* Modal */
@@ -141,43 +135,120 @@
             top: 0;
             width: 100%;
             height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
             overflow: auto;
-            background-color: rgba(0, 0, 0, 0.4);
         }
         .modal-content {
-            background-color: white;
-            margin: 15% auto;
+            background: white;
+            margin: 10% auto;
             padding: 20px;
-            border: 1px solid #888;
             border-radius: 8px;
-            width: 40%;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 500px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .modal iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
         }
         .close {
-            color: #aaa;
             float: right;
-            font-size: 28px;
-            font-weight: bold;
+            font-size: 1.5em;
             cursor: pointer;
+            color: #aaa;
         }
         .close:hover {
             color: black;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .header p {
+                font-size: 1em;
+            }
+            .card {
+                width: 90%;
+            }
+            .modal-content {
+                width: 90%;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <div class="header">
-        <h1>Welcome to BioChirp</h1>
-        <p>This platform enables you to query various interactions involving drugs, diseases, targets, genes, approval statuses, biomarkers, pathways, and more.</p>
+        <div class="header-content">
+            <h1>Welcome to BioChirp</h1>
+            <p>
+                This platform enables you to query various interactions involving drugs, diseases, targets, genes, approval statuses, biomarkers, pathways, and more.
+            </p>
+        </div>
     </div>
-
-    <!-- Free Access License Section -->
-    <div style="text-align: center; margin: 20px 0;">
-        <p><a href="#" onclick="openLicenseModal()" style="text-decoration: underline; color: blue;">Learn more about our Free Access License</a>.</p>
-    </div>
-
+    
+    <style>
+        /* Header Styles */
+        .header {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('assets/images/header-background.jpg') no-repeat center center / cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+    
+        .header-content {
+            max-width: 800px;
+            color: white;
+            z-index: 2;
+        }
+    
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+    
+        .header p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+    
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                height: auto; /* Allow height to adjust dynamically */
+                padding: 40px 20px;
+            }
+    
+            .header h1 {
+                font-size: 2rem;
+            }
+    
+            .header p {
+                font-size: 1rem;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+    
+            .header p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 <!-- Free Access License Section
 <div style="text-align: center; margin: 20px 0;">
     <p><a href="#" onclick="openLicenseModal()" style="text-decoration: underline; color: blue;">Learn more about our Free Access License</a>.</p>
@@ -388,36 +459,149 @@
 
 
 
-    <h2 style="text-align: center; font-size: 24px; margin-top: 40px;">Meet the Team</h2>
+<h2 style="text-align: center; font-size: 24px; margin-top: 40px; text-transform: uppercase; color: #007BFF; font-weight: bold; letter-spacing: 1px;">
+    Meet the Team
+</h2>
 
-    <!-- Team Section -->
-    <div class="team">
-        <div class="team-member">
-            <img src="assets\images\Abhi Photo.jpg" alt="Abhishek Halder">
-            <h3>Abhishek Halder</h3>
-            <p>PhD scholar in Computer Science.</p>
-        </div>
-        <div class="team-member">
-            <img src="assets\images\bun1.jpg" alt="Bernadette Mathew">
-            <h3>Bernadette Mathew</h3>
-            <p>PhD scholar in Computational Biology</p>
-        </div>
-        <div class="team-member">
-            <img src="assets\images\DS.jpg" alt="Debarka Sengupta">
-            <h3>Debarka Sengupta</h3>
-            <p>Proffesor in Computer Science & Computational Biology</p>
-        </div>
+<!-- Team Section -->
+<div class="team">
+    <div class="team-member">
+        <img src="assets/images/Abhi Photo.jpg" alt="Abhishek Halder">
+        <h3>Abhishek Halder</h3>
+        <p>PhD scholar in Computer Science.</p>
     </div>
+    <div class="team-member">
+        <img src="assets/images/bun1.jpg" alt="Bernadette Mathew">
+        <h3>Bernadette Mathew</h3>
+        <p>PhD scholar in Computational Biology</p>
+    </div>
+    <div class="team-member">
+        <img src="assets/images/DS.jpg" alt="Debarka Sengupta">
+        <h3>Debarka Sengupta</h3>
+        <p>Professor in Computer Science & Computational Biology</p>
+    </div>
+</div>
 
-    <!-- Modal -->
-    <div id="contactModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h3>Contact Person</h3>
-            <p>Name: Debarka Sengupta</p>
-            <p>Email: debarka@iiitd.ac.in</p>
-        </div>
+<!-- Modal -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3>Contact Person</h3>
+        <p>Name: Debarka Sengupta</p>
+        <p>Email: debarka@iiitd.ac.in</p>
     </div>
+</div>
+
+<style>
+    /* Team Section Styles */
+    .team {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 20px;
+    }
+    .team-member {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 20px;
+        width: 250px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .team-member:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .team-member img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 15px;
+        transition: transform 0.3s;
+    }
+    .team-member img:hover {
+        transform: rotate(5deg) scale(1.1);
+    }
+    .team-member h3 {
+        font-size: 18px;
+        color: #007BFF;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    .team-member p {
+        font-size: 14px;
+        color: #555;
+        margin: 0;
+    }
+
+    /* Modal Styles */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .modal-content {
+        background: white;
+        margin: 15% auto;
+        padding: 20px;
+        border-radius: 8px;
+        width: 80%;
+        max-width: 400px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .close {
+        float: right;
+        font-size: 1.5em;
+        font-weight: bold;
+        cursor: pointer;
+        color: #aaa;
+    }
+    .close:hover {
+        color: black;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .team-member {
+            width: 90%;
+        }
+    }
+</style>
+
+<script>
+    // Modal open and close functionality
+    function openModal() {
+        document.getElementById("contactModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("contactModal").style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        const modal = document.getElementById("contactModal");
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+
+    window.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            closeModal();
+        }
+    });
+</script>
 
     <!-- Footer -->
     <footer>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone XYZ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            display: flex;
+            gap: 20px;
+        }
+        .product-image {
+            flex: 1;
+            text-align: center;
+        }
+        .product-image img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .product-details {
+            flex: 2;
+        }
+        .product-details h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .product-details .brand {
+            color: #555;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .product-details .price {
+            font-size: 24px;
+            color: #d32f2f;
+            margin: 10px 0;
+        }
+        .product-details .description {
+            margin: 15px 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .product-details .features {
+            margin: 15px 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .product-details .quantity {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .product-details .quantity input {
+            width: 50px;
+            text-align: center;
+        }
+        .start-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1976d2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .start-button:hover {
+            background-color: #1565c0;
+        }
+        .links {
+            margin-top: 20px;
+        }
+        .links a {
+            display: block;
+            color: #1976d2;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-image">
+            <img src="https://via.placeholder.com/500" alt="Smartphone XYZ">
+        </div>
+        <div class="product-details">
+            <h1>Smartphone XYZ</h1>
+            <p class="brand">by BrandName</p>
+            <p class="sku">SKU: XYZ123</p>
+            <p class="price">₹15,999</p>
+            <p class="offer">Get extra 10% off with HDFC Bank Cards</p>
+            <p class="description">
+                Smartphone XYZ comes with a 6.5-inch display, 128GB storage, and a 48MP camera.
+                It is powered by a 5000mAh battery and supports fast charging.
+            </p>
+            <ul class="features">
+                <li>6.5-inch Full HD+ Display</li>
+                <li>48MP + 8MP + 2MP Triple Rear Camera</li>
+                <li>5000mAh Battery with Fast Charging</li>
+                <li>128GB Internal Storage</li>
+                <li>4GB RAM</li>
+            </ul>
+            <div class="quantity">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+            <a href="#" class="start-button">Start</a>
+            <div class="links">
+                <a href="#">GitHub Repository</a>
+                <a href="#">Tutorial with Screenshots</a>
+            </div>
+            <p class="tutorial">Placeholder text for tutorial description. This section can include detailed steps and explanations.</p>
+        </div>
+    </div>
+</body>
+</html>

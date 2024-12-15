@@ -274,16 +274,19 @@
 </script>
     
 
-    <!-- Navigation -->
-    <div class="nav-container">
-        <div class="nav">
-            <ul>
-                <li><a href="#" onclick="openVideoModal()">Tutorial</a></li>
-                <li><a href="#" onclick="openModal()">Contact Us</a></li>
-            </ul>
+
+        <div class="nav-container">
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" onclick="openVideoModal()">Tutorial</a></li>
+                    <li><a href="https://github.com/abhi1238/BioChirp" target="_blank">GitHub</a></li>
+                    <li><a href="#" onclick="citeUs()">Cite Us</a></li>
+                    <li><a href="#" onclick="openModal()">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-
 
     <!-- Video Modal -->
     <div id="videoModal" class="modal">
@@ -305,6 +308,10 @@
         // Open the video modal
         function openVideoModal() {
             document.getElementById("videoModal").style.display = "block";
+        }
+
+        function citeUs() {
+        alert("To be published soon"); // Cite Us functionality
         }
 
         // Close the video modal

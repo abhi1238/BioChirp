@@ -17,7 +17,7 @@ You can watch a demonstration of the BioChirp Chatbot in this video.
 The following diagram shows how the chatbot works:
 ![image](https://github.com/user-attachments/assets/90b3ce54-f44a-4c83-a304-42c35f36529b)
 
-# **Chatbot Features**
+# **BioChirp Features**
 
 # Using the Chatbot
 
@@ -30,7 +30,13 @@ The following diagram shows how the chatbot works:
 # **Technical Overview**
 
 
-# **Contact Us** debarka@iiitd.ac.in 
+# **Contact Us** 
+debarka@iiitd.ac.in
+
 # **Publication**
+To be announced soon
+
 # ** Cite Us**
+To be announced soon
+
 # **Acknowledgements**

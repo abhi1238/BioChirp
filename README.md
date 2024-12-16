@@ -18,3 +18,19 @@ The following diagram shows how the chatbot works:
 ![image](https://github.com/user-attachments/assets/90b3ce54-f44a-4c83-a304-42c35f36529b)
 
 # **Chatbot Features**
+
+# Using the Chatbot
+
+# Asking Questions
+
+
+# Setup Your Own Chatbot
+
+
+# **Technical Overview**
+
+
+# **Contact Us
+# **Publication
+# ** Cite Us
+# **Acknowledgements**

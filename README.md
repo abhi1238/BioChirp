@@ -30,7 +30,7 @@ The following diagram shows how the chatbot works:
 # **Technical Overview**
 
 
-# **Contact Us
-# **Publication
-# ** Cite Us
+# **Contact Us** debarka@iiitd.ac.in 
+# **Publication**
+# ** Cite Us**
 # **Acknowledgements**

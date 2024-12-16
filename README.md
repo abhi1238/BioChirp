@@ -1,7 +1,6 @@
-# BioImage.IO Chatbot 🤖
-:bell: [Publication on Nature Methods](https://www.nature.com/articles/s41592-024-02370-y). Free access: [https://rdcu.be/dQuw7](https://rdcu.be/dQuw7)
+# BioChirp Chatbot 🤖
 
-:bell: Want to Try the Chatbot? [Visit here!](https://bioimage.io/chatbot)
+Want to Try the Chatbot? [Visit here!](http://103.25.231.90:8003)
 
 ## Your Personal Assistant in Computational Bioimaging
 Welcome to the BioImage.IO Chatbot user guide. This guide will help you get the most out of the chatbot, providing detailed information on how to interact with it and retrieve valuable insights related to computational bioimaging.

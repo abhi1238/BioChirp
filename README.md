@@ -29,8 +29,7 @@ Ensures comprehensive insights by mapping drugs, targets, and diseases seamlessl
 
 **Intelligent Query Mapping**
 
-Accurately maps user queries to relevant database fields using advanced language models.
-Supports fields like drug names, pathways, biomarkers, gene interactions, and mechanisms of action.
+Accurately maps user queries to corresponding database fields using advanced language models, supporting fields such as drug names, disease names, target names, gene names, pathways, biomarkers, mechanisms of action, and approval statuses.
 
 **Precision and Semantic Search**
 

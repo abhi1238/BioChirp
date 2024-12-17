@@ -17,6 +17,32 @@ The following diagram shows how the chatbot works:
 
 # **BioChirp Features**
 
+Natural Language Querying
+
+Allows users to ask complex questions about drugs, targets, diseases, pathways, and biomarkers in simple language.
+Returns accurate, structured results without hallucination.
+Integrated Biomedical Data
+
+Combines multiple datasets (e.g., Drug-Target, Drug-Disease, Target-Disease) into a unified system.
+Ensures comprehensive insights by mapping drugs, targets, and diseases seamlessly.
+Intelligent Query Mapping
+
+Accurately maps user queries to relevant database fields using advanced language models.
+Supports fields like drug names, pathways, biomarkers, gene interactions, and mechanisms of action.
+Precision and Semantic Search
+
+Handles both exact matches and semantic matches (e.g., "TB" maps to "Tuberculosis") for biological terms.
+Reduces errors and improves query relevance.
+Efficient Data Retrieval
+
+Retrieves only relevant rows from the database based on query intent.
+Enables downloading filtered data as CSV files for further analysis.
+Contextual Insights
+
+Generates concise, observation-based summaries for query results using GPT-4o-mini.
+Provides clarity and saves time for users analyzing complex datasets.
+
+
 # Using the Chatbot
 
 # Asking Questions

@@ -66,8 +66,8 @@ Provides clarity and saves time for users analyzing complex datasets.
 **Data Services**: Deliver scalable, efficient, and precise retrieval of relevant data with support for exact and semantic searches, empowering users with structured outputs and actionable insights.
 
 
-**License**
-BioChirp is released under the MIT License. See the LICENSE[MIT License](LICENSE). file for more details.
+# **License**
+BioChirp is released under the MIT License. See the [MIT License](LICENSE). file for more details.
 
 
 

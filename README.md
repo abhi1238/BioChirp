@@ -11,7 +11,8 @@ The BioChirp Chatbot is a versatile tool designed to help drug researchers and b
 You can watch a demonstration of the BioChirp Chatbot in this video.
 [![Watch the video](https://www.youtube.com/embed/RV4LGLyLT1s)
 
-![biochirp-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/85be0f1c-d873-44f9-b729-64b6c2a8479f)
+![bbbb](https://github.com/user-attachments/assets/af97e569-1252-453f-8282-be994ddb1212)
+
 
 
 The following diagram shows how the chatbot works:

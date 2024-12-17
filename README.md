@@ -50,19 +50,10 @@ Provides clarity and saves time for users analyzing complex datasets.
 
 
 # Using the Chatbot
-
 We are providing the BioChirpt service for you to try out. You can access the BioChirp [here](https://www.biochirp.net).
 
-# Asking Questions
-
-
-# Setup Your Own Chatbot
-
-
-# **Technical Overview**
-
-
 # **Use Cases**
+
 **Research Institutions**: Enable seamless querying and analysis of biomedical data by integrating drug, target, and disease interactions into a unified platform powered by conversational AI.
 
 **AI-Powered Insights**: Provide accurate and context-aware answers to complex biological queries using advanced language models, minimizing hallucination and enhancing decision-making.

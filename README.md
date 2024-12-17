@@ -58,6 +58,13 @@ Provides clarity and saves time for users analyzing complex datasets.
 # **Technical Overview**
 
 
+# **Use Cases**
+**Research Institutions**: Enable seamless querying and analysis of biomedical data by integrating drug, target, and disease interactions into a unified platform powered by conversational AI.
+
+**AI-Powered Insights**: Provide accurate and context-aware answers to complex biological queries using advanced language models, minimizing hallucination and enhancing decision-making.
+
+**Data Services**: Deliver scalable, efficient, and precise retrieval of relevant data with support for exact and semantic searches, empowering users with structured outputs and actionable insights.
+
 # **Contact Us** 
 debarka@iiitd.ac.in
 

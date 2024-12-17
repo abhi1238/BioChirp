@@ -51,6 +51,8 @@ Provides clarity and saves time for users analyzing complex datasets.
 
 # Using the Chatbot
 
+We are providing the BioChirpt service for you to try out. You can access the BioChirp [here](https://www.biochirp.net).
+
 # Asking Questions
 
 

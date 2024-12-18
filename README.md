@@ -77,3 +77,9 @@ To be announced soon
 To be announced soon
 
 # **Acknowledgements**
+
+We would like to express our sincere gratitude to Surabhi Singh, Ankita Das, and Rohit Kesarwani for their active support in the design of the BioChirp tool.
+
+We also extend our appreciation to Himanshu Nagdev for his valuable assistance in hosting the website and to the IT team of Indraprastha Institute of Information Technology (IIIT Delhi) for their continuous support.
+
+

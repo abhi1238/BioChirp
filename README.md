@@ -22,8 +22,8 @@ The following diagram shows how the chatbot works:
 
 **Natural Language Querying**
 
-Allows users to ask complex questions about drugs, targets, diseases, pathways, and biomarkers in simple language.
-Returns accurate, structured results without hallucination.
+Allows users to ask complex questions about drugs, targets, diseases, genes, pathways, biomarkers, mechanisms of action, and approval statuses in simple language.
+Returns structured results with reduced scope for hallucinations
 
 **Integrated Biomedical Data**
 

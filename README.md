@@ -74,7 +74,7 @@ For any questions or concerns, please feel free to contact **Dr. Debarka Sengupt
 # **Publication**
 To be announced soon
 
-# ** Cite Us**
+# **Cite Us**
 To be announced soon
 
 # **Acknowledgements**

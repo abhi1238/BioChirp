@@ -62,7 +62,7 @@ We are providing the BioChirpt service for you to try out. You can access the Bi
 
 
 # **License**
-BioChirp is released under the MIT License. See the [MIT License](LICENSE). file for more details.
+BioChirp is released under the MIT License. See the [MIT License](LICENSE) file for more details.
 
 
 

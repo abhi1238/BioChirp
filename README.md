@@ -1,8 +1,9 @@
 # BioChirp
  ![favicon](https://github.com/user-attachments/assets/6a2d3449-3b16-44ce-a903-8a2bc4157030)
 BioChirp is a generative AI-powered conversational framework designed for querying biomedical databases, extracting biological insights, and facilitating data-driven research. BioChirp enables seamless interaction with integrated platforms, combining advanced language models, precise data retrieval, and user-friendly result generation for complex biological queries.
+[Watch the Video on YouTube](https://youtu.be/RV4LGLyLT1s)
 
-Want to Try the Chatbot? [Visit here!](http://103.25.231.90:8003)
+Want to Try the Chatbot? [Visit here!](http://103.25.231.90:8003) 
 
 # **Your Personal Assistant for Biological Database Retrieval**
 Welcome to the BioChirp Chatbot user guide. This guide will show you how to use the chatbot effectively to retrieve valuable insights from biological databases using natural language queries.

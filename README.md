@@ -67,7 +67,8 @@ BioChirp is released under the MIT License. See the [MIT License](LICENSE) file 
 
 
 # **Contact Us** 
-debarka@iiitd.ac.in
+For any questions or concerns, please feel free to contact **Dr. Debarka Sengupta** at [debarka@iiitd.ac.in](mailto:debarka@iiitd.ac.in).
+
 
 # **Publication**
 To be announced soon

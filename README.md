@@ -10,9 +10,7 @@ Welcome to the BioChirp Chatbot user guide. This guide will show you how to use 
 
 # **Introduction**
 The BioChirp Chatbot is a versatile tool designed to help drug researchers and biologists access data directly from queries in natural language. It serves as your personal assistant for retrieving information in simple English.
-
-![ttd-demo](https://github.com/user-attachments/assets/b36d1f58-1068-4f68-b6f4-5b688537a8dc)
-
+![ttd-demo](https://github.com/user-attachments/assets/1c6b860c-27a6-486f-8180-4a2d6ae62077)
 
 
 
